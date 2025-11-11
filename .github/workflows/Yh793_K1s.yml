@@ -75,6 +75,8 @@ jobs:
       - name: Recovery Padavan files download from remote
         run: |
           cp -rf Padavan/busybox-1.24.x $WORK_PATH/trunk/user/busybox
+          cd $WORK_PATH/trunk/user/busybox
+          sudo chmod -R 777 busybox-1.24.x
       - name: Recovery bin files download from remote
         run: |
           cp -f $TNAME/$TNAME.config $WORK_PATH/trunk/configs/templates/$TNAME.config
