@@ -813,6 +813,10 @@ config PREFIX
 	default "./_install"
 	help
 	  Define your directory to install BusyBox files/subdirs in.
+	  
+config systemd
+	bool "FEATURE_SYSTEMD"
+	default y
 
 endmenu
 
